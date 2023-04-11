@@ -45,14 +45,18 @@ body{
 .navbar{
   background-color: #0b0b0bb0;
   overflow-y: hidden;
+  position: fixed;
   
 }
 
 .nav-all{
   height: 12vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   overflow-y: hidden;
+  
+  
   
 }
 
@@ -160,30 +164,35 @@ body{
 }
 
 .second-container{
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    height: 86vh;
     width: 100vw;
-    background-color: #090909;
+    background-color: antiquewhite;
+    color: black;
 
     .conteudo1{
-      margin-left: 5%;
-      padding-top: 20%;
+      
   }
 
-  .conteudo2{
-    padding-top: 10vh;
-    width: 40vw;
+  .conteudo2{  
+    width: 36vw;
     height: 60vh;
-    background-image:url('../imagens/who.jpg');
+    background-image:url('../imagens/download\ \(2\).jpg');
     background-repeat: no-repeat;
     background-position: center ;
-    background-size: auto;
+    background-size: cover;
+    border-radius: 15px;
   }
 
 }
 
 .contain-middle{
+  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  
+  
   
 }
 
