@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 .container-high {
   height: 100vh;
   width: 100vw;
-  background-image: url("../imagens/HD wallpaper_ Technology, Monitor, Alpha Coders, Binary, CRT Monitor, Retro Wave.jpg");
+  background-image: url("../imagens/wallpapernew.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,22 +27,29 @@ body {
   align-items: center;
   gap: 15px 20px;
 }
+.container-high .content-high .h1-high {
+  overflow-y: hidden;
+}
 .container-high .content-high .p-high {
   font-family: "Alkatra", cursive;
+  overflow-y: hidden;
 }
 
 .navbar {
-  background-color: rgba(11, 11, 11, 0.3176470588);
+  background-color: rgba(11, 11, 11, 0.6901960784);
+  overflow-y: hidden;
 }
 
 .nav-all {
-  height: 15vh;
+  height: 12vh;
   display: flex;
   justify-content: space-around;
+  overflow-y: hidden;
 }
 
 .h3-top {
   width: 200px;
+  overflow-y: hidden;
 }
 
 .h3-top:hover {
@@ -55,6 +62,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow-y: hidden;
 }
 .nav-itens a {
   color: white;
@@ -119,6 +127,34 @@ body {
 .container-card .card:hover .content {
   transform: translatey(0px);
   opacity: 1;
+}
+
+.second-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #090909;
+}
+.second-container .conteudo1 {
+  margin-left: 5%;
+  padding-top: 20%;
+}
+.second-container .conteudo2 {
+  padding-top: 10vh;
+  width: 40vw;
+  height: 60vh;
+  background-image: url("../imagens/who.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.contain-middle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.p-middle {
+  width: 42vw;
 }
 
 /*# sourceMappingURL=style.css.map */
