@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slide de Abertura</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #003494;
+    }
+    
+    #slide-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    #slide-container.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    #slide-text {
+      font-size: 58px;
+      color: white;
+      text-align: center;
+      font-weight: bolder;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var slideContainer = document.getElementById("slide-container");
+      var contentContainer = document.getElementById("content-container");
+      
+      setTimeout(function() {
+        slideContainer.classList.add("hide");
+        contentContainer.style.display = "block";
+      }, 3000);
+    });
+  </script>
+</head>
+<body>
+  <div id="slide-container">
+    <div id="slide-text">
+      Creating Inovation <br> For people <br> Everyday
+    </div>
+  </div>
+  
+  <div id="content-container" style="display: none;">
+    <!-- Aqui você pode adicionar o conteúdo principal do seu site -->
+    <div>
+      <!-- Conteúdo principal -->
+    </div>
+  </div>
+</body>
+</html>
