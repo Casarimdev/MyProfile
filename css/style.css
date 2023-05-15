@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,82 +6,73 @@
   overflow-x: hidden;
 }
 
-body{
+body {
   background-color: #0b0b0b;
   color: white;
 }
 
-.container-high{
+.container-high {
   height: 100vh;
   width: 100vw;
-  background-image: url('../imagens/wallpapernew.jpeg');
+  background-image: url("../imagens/wallpapernew.jpeg");
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
   background-size: cover;
-  
-  
-  
-
-  .content-high{
+}
+.container-high .content-high {
   padding-top: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px 20px;
-
-  .h1-high{
-    overflow-y: hidden;
-  }
-  .p-high{
-    font-family: 'Alkatra', cursive;
-    overflow-y: hidden;
-  }
 }
-
-}
-
-.navbar{
-  background-color: #0b0b0bb0;
+.container-high .content-high .h1-high {
   overflow-y: hidden;
-  
+}
+.container-high .content-high .p-high {
+  font-family: "Alkatra", cursive;
+  overflow-y: hidden;
 }
 
-.nav-all{
+.navbar {
+  background-color: rgba(11, 11, 11, 0.6901960784);
+  overflow-y: hidden;
+}
+
+.nav-all {
   height: 12vh;
   display: flex;
   justify-content: space-around;
   overflow-y: hidden;
-  
 }
 
-.h3-top{
+.h3-top {
   width: 200px;
   overflow-y: hidden;
 }
 
-.h3-top:hover{
-  text-decoration: underline ;
+.h3-top:hover {
+  text-decoration: underline;
   cursor: pointer;
-  
 }
-.nav-itens{
+
+.nav-itens {
   width: 50vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   overflow-y: hidden;
-
-  a{
-    color: white;
-  }
-
-  a:hover{
-    background-color: rgba(105, 105, 105, 0.801);
-    color: white;
-    border-radius: 20px;
-  }
 }
+.nav-itens a {
+  color: white;
+}
+.nav-itens a:hover {
+  background-color: rgba(105, 105, 105, 0.801);
+  color: white;
+  border-radius: 20px;
+}
+
 .intro {
   background: black;
   position: fixed;
@@ -95,6 +85,7 @@ body{
   align-items: center;
   overflow-y: hidden;
 }
+
 .slider {
   background: rgb(97, 105, 109);
   position: fixed;
@@ -123,7 +114,7 @@ body{
   display: inline-block;
 }
 
-.container-card{
+.container-card {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -132,8 +123,9 @@ body{
   z-index: 1;
   gap: 10px 15px;
 }
-.card{
-  position:relative;
+
+.card {
+  position: relative;
   width: 300px;
   height: 400px;
   display: flex;
@@ -142,14 +134,14 @@ body{
   background: darkgrey;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-  background: rgba(255,255,255,0.1);
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255, 255,255,0.8);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
 }
 
-.content{
+.content {
   padding: 20px;
   text-align: center;
   transform: translateY(100px);
@@ -157,39 +149,37 @@ body{
   transition: 0.5s;
 }
 
-.container-card .card:hover .content{
+.container-card .card:hover .content {
   transform: translatey(0px);
   opacity: 1;
 }
 
-.second-container{
-    height: 100vh;
-    width: 100vw;
-    background-color: #090909;
-
-    .conteudo1{
-      margin-left: 5%;
-      padding-top: 20%;
-  }
-
-  .conteudo2{
-    padding-top: 10vh;
-    width: 40vw;
-    height: 60vh;
-    background-image:url('../imagens/who.jpg');
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: auto;
-  }
-
+.second-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #090909;
+}
+.second-container .conteudo1 {
+  margin-left: 5%;
+  padding-top: 20%;
+}
+.second-container .conteudo2 {
+  padding-top: 10vh;
+  width: 40vw;
+  height: 60vh;
+  background-image: url("../imagens/who.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
-.contain-middle{
+.contain-middle {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
-.p-middle{
+.p-middle {
   width: 42vw;
 }
+
+/*# sourceMappingURL=style.css.map */
