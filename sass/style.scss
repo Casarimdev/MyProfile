@@ -32,6 +32,7 @@ body{
   gap: 15px 20px;
 
   .h1-high{
+    font-family: 'Alkatra', cursive;
     overflow-y: hidden;
   }
   .p-high{
@@ -83,12 +84,12 @@ body{
 
   a:hover{
     background-color: rgba(105, 105, 105, 0.801);
-    color: white;
+    color: #D04242;
     border-radius: 20px;
   }
 }
 .intro {
-  background: black;
+  background: #161419;
   position: fixed;
   top: 0;
   left: 0;
