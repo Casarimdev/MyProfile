@@ -1,82 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-body {
-  background-color: #0b0b0b;
-  color: white;
-}
-
-.container-high {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../imagens/wallpaper-python-2.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-.container-high .content-high {
-  padding-top: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 15px 20px;
-  margin-left: 10vw;
-}
-.container-high .content-high .h1-high {
-  font-family: "Alkatra", cursive;
-  overflow-y: hidden;
-}
-.container-high .content-high .p-high {
-  font-family: "Alkatra", cursive;
-  overflow-y: hidden;
-}
-
-.navbar {
-  background-color: #161419;
-  overflow-y: hidden;
-  position: fixed;
-  border-bottom: 1px solid #D04242;
-}
-
-.nav-all {
-  height: 12vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  overflow-y: hidden;
-}
-
-.h3-top {
-  width: 200px;
-  overflow-y: hidden;
-}
-
-.h3-top:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.nav-itens {
-  width: 50vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  overflow-y: hidden;
-}
-.nav-itens a {
-  color: white;
-}
-.nav-itens a:hover {
-  background-color: rgba(105, 105, 105, 0.801);
-  color: #D04242;
-  border-radius: 20px;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .intro {
   background: #161419;
   position: fixed;
@@ -118,62 +43,188 @@ body {
   display: inline-block;
 }
 
-.container-card {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  min-height: 80vh;
-  z-index: 1;
-  gap: 10px 15px;
-}
-
-.card {
+.scroll-down2 {
+  width: 30px;
+  height: 50px;
+  box-shadow: 2px 1px 26px -6px #f60202;
+  border: 2px solid #f60202;
+  border-radius: 50px;
+  cursor: pointer;
   position: relative;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: darkgrey;
   overflow: hidden;
+  margin: 0 auto;
+}
+.scroll-down2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transform: translateX(-50%);
+  background: #b01f1f;
+  animation: scrollDown2 1.5s ease infinite;
+}
+.scroll-down2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  width: 6px;
+  height: 15px;
+  border-radius: 3px;
+  transform: translateX(-50%);
+  background: #b01f1f;
+}
+
+@keyframes scrollDown2 {
+  0% {
+    transform: translate(-50%, 0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 16px);
+    opacity: 0;
+  }
+}
+.button-scroll {
+  height: auto;
+  padding-top: 10vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: white;
+}
+
+.h3-top {
+  font-family: "Alkatra";
+}
+
+.container-high {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../imagens/wallpaper-python-2.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.content-high {
+  padding-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px 20px;
+  padding-left: 10vw;
+}
+.content-high .h1-high {
+  font-family: "DM Sans", sans-serif;
+  overflow-y: hidden;
+}
+.content-high .p-high {
+  font-family: "DM Sans", sans-serif;
+  overflow-y: hidden;
+}
+
+.button-l {
+  border: 1px solid #161419;
+  width: 10vw;
+}
+
+.cv {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #161419;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #b01f1f;
+  color: white;
+  transition: 0.8s;
+}
+.cv:hover {
+  background-color: #b01f1f;
+  color: #fafafa;
+  transition: 0.8s;
+  transform: scale(0.9);
+}
+
+.contact {
+  font-family: "Poppins", sans-serif;
+  border: 3px solid #b01f1f;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #161419;
+  color: #f60202;
+  transition: 0.8s;
+}
+.contact:hover {
+  background-color: #b01f1f;
+  color: #fafafa;
+  transition: 0.8s;
+  transform: scale(0.9);
+}
+
+.navbar {
+  background-color: #161419;
+  overflow-y: hidden;
+  border-bottom: 1px solid #D04242;
+}
+
+.nav-all {
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  overflow-y: hidden;
+}
+
+.h3-top {
+  width: 200px;
+  overflow-y: hidden;
+}
+
+.h3-top:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-itens {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow-y: hidden;
+}
+.nav-itens a {
+  color: white;
+}
+.nav-itens a:hover {
+  background-color: rgba(105, 105, 105, 0.801);
+  color: #D04242;
   border-radius: 20px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-}
-
-.content {
-  padding: 20px;
-  text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.container-card .card:hover .content {
-  transform: translatey(0px);
-  opacity: 1;
 }
 
 .second-container {
-  display: flex;
-  align-items: center;
   height: 86vh;
   width: 100vw;
+  display: flex;
+  align-items: start;
   background-color: #161419;
   color: #D04242;
-}
-.second-container .conteudo2 {
-  width: 36vw;
-  height: 60vh;
-  background-image: url("../imagens/download (2).jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border-radius: 15px;
 }
 
 .contain-middle {
@@ -183,34 +234,13 @@ body {
   flex-wrap: wrap;
 }
 
-.p-middle {
-  width: 42vw;
+.h1-middle {
+  font-family: "Poppins", sans-serif;
 }
 
-.third-container {
-  display: flex;
-  align-items: center;
-  height: 86vh;
-  width: 100vw;
-  background-color: #0A1817;
-  color: wheat;
-}
-.third-container .contain-middle1 {
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.third-container .conteudo3 {
-  width: 40vw;
-  height: 60vh;
-  background-image: url("../imagens/whatcani.gif");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border-radius: 15px;
-  margin-top: 12vh;
-  margin-left: 5vh;
+.p-middle {
+  font-family: "Poppins", sans-serif;
+  width: 42vw;
 }
 
 /*# sourceMappingURL=style.css.map */

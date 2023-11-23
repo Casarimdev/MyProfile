@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
 .intro {
-    background: black;
+    background: #161419;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,14 +22,14 @@
   }
   
   .intro-text {
-    color: rgb(233, 233, 233);
+    color: #161419;
     font-family: "Heebo", sans-serif;
     font-size: 3rem;
     overflow-y: hidden;
   }
   
   .hide {
-    background: black;
+    color: #fafafa;
     overflow: hidden;
   }
   
@@ -43,3 +37,4 @@
     transform: translateY(100%);
     display: inline-block;
   }
+  

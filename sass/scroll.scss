@@ -1,0 +1,55 @@
+.scroll-down2{
+    width: 30px;
+    height: 50px;
+    box-shadow: 2px 1px 26px -6px #f60202;
+    border: 2px solid #f60202;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; //---you can romove this line---
+
+    &:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        transform: translateX(-50%);
+        background:  #b01f1f;
+        animation: scrollDown2 1.5s ease infinite;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        width: 6px;
+        height: 15px;
+        border-radius: 3px;
+        transform: translateX(-50%);
+        background:  #b01f1f;
+    }
+}
+
+@keyframes scrollDown2{
+    0%{
+        transform: translate(-50%, 0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translate(-50%, 8px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%, 16px);
+        opacity: 0;
+    }
+}
+
+.button-scroll{
+    height: auto;
+    padding-top: 10vh;
+}
