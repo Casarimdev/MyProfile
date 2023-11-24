@@ -224,7 +224,6 @@ body {
   display: flex;
   align-items: start;
   background-color: #161419;
-  color: #D04242;
 }
 
 .contain-middle {
@@ -236,11 +235,22 @@ body {
 
 .h1-middle {
   font-family: "Poppins", sans-serif;
+  color: #D04242;
 }
 
 .p-middle {
   font-family: "Poppins", sans-serif;
   width: 42vw;
+  color: #D04242;
+}
+
+.p-middle1 {
+  font-family: "Poppins", sans-serif;
+  width: 42vw;
+  color: #D04242;
+  text-align: center;
+  width: 60vw;
+  border-bottom: 3px solid #f60202;
 }
 
 /*# sourceMappingURL=style.css.map */
