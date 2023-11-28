@@ -117,6 +117,319 @@
     opacity: 0;
   }
 }
+.about {
+  overflow-x: visible !important;
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.2s ease;
+}
+.about .bg_links {
+  overflow-x: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  backdrop-filter: blur(5px);
+  position: absolute;
+}
+.about .heart {
+  cursor: pointer;
+}
+.about .heart:hover {
+  background-color: #fd1d1d;
+}
+.about .logo {
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 10px 7px;
+  opacity: 0.9;
+  transition: all 1s 0.2s ease;
+  bottom: 0;
+  right: 0;
+}
+.about .social {
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+}
+.about .social .icon {
+  width: 50px;
+  height: 50px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: all 0.2s ease, background-color 0.4s ease;
+  opacity: 0;
+  border-radius: 100%;
+}
+.about .social.portfolio {
+  transition: all 0.8s ease;
+}
+.about .social.dribbble {
+  transition: all 0.3s ease;
+}
+.about .social.linkedin {
+  transition: all 0.8s ease;
+}
+.about:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  text-decoration: none;
+}
+.about:hover .logo {
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+.about:hover .social {
+  opacity: 1;
+}
+.about:hover .social .icon {
+  opacity: 0.9;
+}
+.about:hover .social:hover {
+  background-size: 28px;
+  text-decoration: none;
+}
+.about:hover .social:hover .icon {
+  background-size: 65%;
+  opacity: 1;
+}
+.about:hover .social.portfolio {
+  right: 0;
+  bottom: calc(100% - 40px);
+  transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.portfolio .icon:hover {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  text-decoration: none;
+}
+.about:hover .social.dribbble {
+  bottom: 45%;
+  right: 45%;
+  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.dribbble .icon:hover {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+}
+.about:hover .social.github {
+  bottom: 93%;
+  right: 75%;
+  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.github .icon:hover {
+  background-color: #f5deb3;
+}
+.about:hover .social.linkedin {
+  bottom: 0;
+  right: calc(100% - 40px);
+  transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.linkedin .linke:hover {
+  background: linear-gradient(135deg, #0077B5, #0A66C2);
+  text-decoration: none;
+}
+
+/* Secondary Icons */
+.secondary-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.secondary-icons .icon-second {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+@media screen and (max-width: 890px) {
+  .secondary-icons .icon-second {
+    margin: 0 5px;
+  }
+}
+.secondary-icons .icon-second:last-child {
+  margin-right: 30px;
+}
+@media screen and (max-width: 890px) {
+  .secondary-icons .icon-second:last-child {
+    margin-right: 15px;
+  }
+}
+.secondary-icons .icon-second:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+  opacity: 0.5;
+}
+@media screen and (max-width: 890px) {
+  .secondary-icons .icon-second:hover {
+    transform: translateY(0px);
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+/* Main Nav */
+.menu {
+  display: none;
+  /* Open Menu */
+  /* Main Link - text */
+  /* Sub Menu */
+}
+.menu .text-item {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 40px;
+  opacity: 0.3;
+  width: 100%;
+  height: 20%;
+  letter-spacing: 5px;
+  transform: rotate(-90deg) translateX(0px);
+  transition: all 0.4s 0.2s ease-in-out, letter-spacing 0.2s ease-in, opacity 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform-origin: center;
+  animation: text-in 0.6s ease;
+  position: absolute;
+}
+@media screen and (max-width: 890px) {
+  .menu .text-item {
+    transform: rotate(0deg);
+    font-size: 30px;
+  }
+}
+@keyframes text-in {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.menu .text-item .icon {
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all 0.4s ease-in-out;
+  background-image: url("https://rafaelavlucas.github.io/assets/icons/white/icon-54.svg");
+}
+@media screen and (max-width: 890px) {
+  .menu .text-item .icon {
+    opacity: 0.5;
+    transform: translateY(40px);
+  }
+}
+.menu .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.6s ease-in-out;
+  height: 0%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  bottom: 0;
+  transform: translateY(50%);
+  position: absolute;
+}
+@media screen and (max-width: 890px) {
+  .menu .submenu {
+    padding: 0 5%;
+  }
+}
+.menu .submenu .sub-item {
+  display: none;
+  text-decoration: none;
+  margin: 10px 0;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 890px) {
+  .menu .submenu .sub-item {
+    font-size: 16px;
+  }
+}
+.menu .submenu .sub-item:after {
+  content: "";
+  height: 0%;
+  width: 3px;
+  background-color: white;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: height 0.4s 0.3s ease, width 0.4s ease;
+}
+.menu .submenu .sub-item:hover {
+  text-decoration: none;
+}
+.menu .submenu .sub-item:hover:after {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: height 0.4s ease, width 0.4s 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .nav-all {
+    height: 6vh !important;
+  }
+  .collapse:not(.show) {
+    display: flex !important;
+  }
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  .nav-itens .nav-link {
+    padding: 0 !important;
+  }
+  .nav-itens {
+    gap: 40px !important;
+  }
+}
+.skills-container {
+  background-color: #161419;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -131,6 +444,12 @@ body {
 
 .h3-top {
   font-family: "DM Sans", sans-serif;
+  transition: 0.8s;
+}
+.h3-top:hover {
+  color: #D04242;
+  transition: 0.8s;
+  transform: scale(0.9);
 }
 
 .container-high {
@@ -199,9 +518,10 @@ body {
 }
 
 .navbar {
-  background-color: #161419;
+  background: rgb(22, 20, 25);
+  background: linear-gradient(180deg, rgb(22, 20, 25) 51%, rgba(22, 20, 25, 0) 74%);
   overflow-y: hidden;
-  border-bottom: 1px solid #D04242;
+  border-bottom: 1px solid #b01f1f;
 }
 
 .nav-all {
@@ -234,7 +554,7 @@ body {
 }
 .nav-itens .nav-link {
   color: white;
-  width: 8vw;
+  width: auto;
   font-weight: 500;
   padding: 12px 30px;
   text-align: center;
@@ -272,7 +592,7 @@ body {
 
 .p-middle {
   font-family: "Poppins", sans-serif;
-  width: 42vw;
+  width: 30vw;
   color: #fafafa;
 }
 
@@ -283,6 +603,41 @@ body {
   text-align: center;
   width: 60vw;
   border-bottom: 3px solid #f60202;
+}
+
+.container-down {
+  width: 100vw;
+  background-color: #161419;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-down .text-down {
+  width: 50%;
+  height: auto;
+  padding-left: 10vw;
+}
+.container-down .text-down .h3-know {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #D04242;
+  height: auto;
+  overflow: hidden;
+}
+.container-down .img-me {
+  width: 50%;
+  height: auto;
+  padding-left: 10vw;
+}
+.container-down .img-me .me {
+  height: 40vh;
+  width: 30vw;
+  border-radius: 50%;
+  background-color: #D04242;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

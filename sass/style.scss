@@ -5,6 +5,8 @@
 @import 'scroll.scss';
 @import 'typing.scss';
 @import 'navbar.scss';
+@import 'navrespos.scss';
+@import 'skills.scss';
 
 * {
   margin: 0;
@@ -20,6 +22,12 @@ body{
 
 .h3-top{
   font-family: 'DM Sans', sans-serif;
+  transition: 0.8s;
+  &:hover{
+    color: #D04242;
+    transition: 0.8s;
+    transform: scale(0.9);
+  }
 }
 
 .container-high{
@@ -89,9 +97,10 @@ body{
 }
 
 .navbar{
-  background-color: #161419;
+  background: rgb(22,20,25);
+background: linear-gradient(180deg, rgba(22,20,25,1) 51%, rgba(22,20,25,0) 74%);
   overflow-y: hidden;
-  border-bottom: 1px solid #D04242;
+  border-bottom: 1px solid #b01f1f;
 }
 
 .nav-all{
@@ -128,7 +137,7 @@ body{
 
   .nav-link{
     color: white;
-    width: 8vw;
+    width: auto;
     font-weight     : 500;
     padding         : 12px 30px;
     text-align: center;
@@ -215,6 +224,7 @@ body{
   
 }
 
+
 .h1-middle{
   font-family: 'Poppins', sans-serif;
   color: #D04242;
@@ -223,7 +233,7 @@ body{
 
 .p-middle{
   font-family: 'Poppins', sans-serif;
-  width: 42vw;
+  width: 30vw;
   color: #fafafa;
   
 }
@@ -236,3 +246,44 @@ body{
   width: 60vw;
   border-bottom: 3px solid #f60202;
 }
+
+
+.container-down{
+  width: 100vw;
+  background-color: #161419;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .text-down{
+    width: 50%;
+    height: auto;
+    padding-left: 10vw;
+
+    .h3-know{
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      color: #D04242;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  .img-me{
+    width: 50%;
+    height: auto;
+    padding-left: 10vw;
+    .me{
+      
+      height: 40vh;
+      width: 30vw;
+      border-radius: 50%;
+      background-color: #D04242;
+    }
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+

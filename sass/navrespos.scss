@@ -1,0 +1,25 @@
+@media (max-width: 992px){
+
+    .nav-all{
+        height: 6vh !important;
+    }
+
+    .collapse:not(.show) {
+        display: flex !important;
+    }
+
+    .navbar-nav{
+        flex-direction: row !important;
+        
+    }
+
+    .nav-itens .nav-link{
+        padding: 0 !important;
+        
+    }
+
+    .nav-itens{
+        gap: 40px !important;
+    }
+    
+}
