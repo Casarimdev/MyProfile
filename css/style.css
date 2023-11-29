@@ -428,6 +428,58 @@
 }
 .skills-container {
   background-color: #161419;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills-container .box-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.skills-container .box-container .box-skills {
+  height: auto;
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #151C28;
+  transition: 1s;
+}
+.skills-container .box-container .box-skills:hover {
+  transition: 1s;
+  transform: scale(0.9);
+}
+.skills-container .box-container .box-skills .h3-skills {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  height: auto;
+  margin-bottom: 0 !important;
+  overflow-y: hidden;
+  color: #fafafa;
+  text-shadow: 2rgb 66, 90, 208 4242;
+}
+.skills-container .box-container .box-skills .skills {
+  gap: 25px;
+  height: 40vh;
+  width: 25vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #151C28;
+}
+.skills-container .box-container .box-skills .skills span {
+  font-family: "DM Sans", sans-serif;
+  color: #878989;
 }
 
 * {
@@ -507,7 +559,7 @@ body {
   font-weight: 500;
   border-radius: 10px;
   background-color: #161419;
-  color: #f60202;
+  color: #fafafa;
   transition: 0.8s;
 }
 .contact:hover {
@@ -534,6 +586,7 @@ body {
 
 .h3-top {
   width: 200px;
+  color: #fafafa !important;
   overflow-y: hidden;
   margin-bottom: 0 !important;
 }
@@ -541,6 +594,7 @@ body {
 .h3-top:hover {
   text-decoration: none;
   cursor: pointer;
+  color: #D04242 !important;
 }
 
 .nav-itens {
@@ -587,7 +641,7 @@ body {
 
 .h1-middle {
   font-family: "Poppins", sans-serif;
-  color: #D04242;
+  color: #b01f1f;
 }
 
 .p-middle {
@@ -624,6 +678,16 @@ body {
   height: auto;
   overflow: hidden;
 }
+.container-down .text-down .container-icons {
+  height: auto;
+  width: 15vw;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  background-color: rgba(250, 250, 250, 0);
+}
 .container-down .img-me {
   width: 50%;
   height: auto;
@@ -638,6 +702,15 @@ body {
 
 a {
   text-decoration: none !important;
+}
+
+.icons {
+  transition: 0.6s !important;
+}
+.icons:hover {
+  transition: 0.6s !important;
+  transform: scale(0.9) !important;
+  color: #b01f1f !important;
 }
 
 /*# sourceMappingURL=style.css.map */
