@@ -545,6 +545,11 @@
 }
 .card .p-card {
   margin-bottom: 0 !important;
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
+}
+.card .h2-card {
+  font-family: "DM Sans", sans-serif;
 }
 
 .img-proj {
@@ -563,15 +568,36 @@
 }
 
 .card2 {
-  background-image: url("../imagens/rockert-2.jpg");
   background-repeat: no-repeat;
+  background-color: #161419;
   background-size: cover;
   background-position: left top;
 }
 
 .card3 {
-  background-image: url("../imagens/calculator.png");
   background-repeat: no-repeat;
+  background-color: #161419;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card4 {
+  background-repeat: no-repeat;
+  background-color: #161419;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card5 {
+  background-repeat: no-repeat;
+  background-color: #161419;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card6 {
+  background-repeat: no-repeat;
+  background-color: #161419;
   background-size: cover;
   background-position: center center;
 }
