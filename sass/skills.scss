@@ -2,26 +2,28 @@
     background-color: #161419;
     height: auto;
     width: 100%;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
 
     .box-container{
-        width: 90%;
+        width: 100%;
         height: auto;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
         gap: 50px;
         padding: 10vh;
 
         .box-skills{
-            height: 45vh;
+            height: 37vh;
             display: flex;
             padding: 5vh;
             width: 25vw;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
             gap: 10px;
             // border: 2px solid #D04242;
@@ -49,16 +51,17 @@
 
             .skills{
                 gap: 10px 15px;
-                height: 30vh;
+                height: auto;
                 width: 20vw;
-                display: flex;
-                flex-wrap: wrap;
-                // justify-content: space-evenly;
-                flex-direction: column;
-                background-color: #161419;;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-content: center;
+                background-color: #161419;
 
                 .p-skill{
                     font-size: 0.8rem;
+                    width: auto;
                     font-family: 'DM Sans', sans-serif;
                     color: #fafafa;
                 }
