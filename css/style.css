@@ -513,6 +513,7 @@
 }
 .container-card {
   padding-top: 5vh;
+  padding-bottom: 5vh;
   height: auto;
   width: 100%;
   background-color: #161419;
@@ -538,18 +539,37 @@
   background: darkgrey;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(176, 31, 31, 0.5647058824);
+  background: rgba(176, 31, 31, 0.5647058824);
   box-shadow: -1px 7px 12px -1px rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0px);
+}
+.card:hover .pc-icon {
+  color: white !important;
 }
 .card .p-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0 !important;
   font-family: "Poppins", sans-serif;
   color: #fafafa;
 }
+.card .p-card:hover {
+  text-decoration: overline;
+}
 .card .h2-card {
   font-family: "DM Sans", sans-serif;
+}
+
+.pc-icon {
+  transition: 2s;
+}
+.pc-icon:hover {
+  transform: translateX(20px);
+  transition: 1s;
+  color: white;
 }
 
 .img-proj {
