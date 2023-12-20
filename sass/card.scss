@@ -14,7 +14,7 @@
   .card{
     
     position:relative;
-    width: 300px;
+    width: 350px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -27,12 +27,31 @@
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255, 255,255,0.8);
     backdrop-filter: blur(5px);
+   
+  }
+  
+
+  .card1{
     background-image: url('../imagens/wallpaper-python.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
   }
-  
+
+  .card2{
+    background-image: url('../imagens/rocket.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+  }
+
+  .card3{
+    background-image: url('../imagens/calculator.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
   .content{
     padding: 20px;
     text-align: center;

@@ -8,25 +8,27 @@
 
     .box-container{
         width: 90%;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
+        padding: 10vh;
 
         .box-skills{
-            height: auto;
+            height: 45vh;
             display: flex;
-            width: 30vw;
+            padding: 5vh;
+            width: 25vw;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 10px;
             // border: 2px solid #D04242;
             border-radius: 20px;
-            background-color: #fafafa;
+            background-color: #161419;;
             transition: 0.8s;
-            box-shadow: 1px 4px 19px 4px rgba(255,255,255,0.98);
+            box-shadow: -1px 7px 12px -1px rgba(255,255,255,0.75);
 
             &:hover{
                 box-shadow: none;
@@ -41,22 +43,24 @@
                 height: auto;
                 margin-bottom: 0 !important;
                 overflow-y: hidden;
-                color: #151C28;
+                color: #fafafa;
                 text-shadow: 2rgb(66, 90, 208)4242;
             }
 
             .skills{
-                gap: 25px;
-                height: 40vh;
-                width: 25vw;
+                gap: 10px 15px;
+                height: 30vh;
+                width: 20vw;
                 display: flex;
                 flex-wrap: wrap;
+                // justify-content: space-evenly;
                 flex-direction: column;
-                background-color: #fafafa;
+                background-color: #161419;;
 
                 .p-skill{
+                    font-size: 0.8rem;
                     font-family: 'DM Sans', sans-serif;
-                    color: #151C28;
+                    color: #fafafa;
                 }
 
                 span{
