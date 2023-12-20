@@ -147,4 +147,16 @@
     opacity: 1;
   }
 
+  @media (max-width: 1290px){
+    .container-card{
+      grid-template-columns: 500px 500px;
+    }
+  }
+
+  @media (max-width: 900px){
+    .container-card{
+      grid-template-columns: 1fr;
+    }
+  }
+
   
