@@ -449,8 +449,7 @@
   padding: 10vh;
 }
 .skills-container .box-container .box-skills {
-  min-height: 34vh !important;
-  max-height: 44vh !important;
+  min-height: 44vh !important;
   height: auto !important;
   display: grid;
   padding: 5vh;
@@ -480,7 +479,7 @@
   text-shadow: 2rgb 66, 90, 208 4242;
 }
 .skills-container .box-container .box-skills .skills {
-  gap: 20px 15px;
+  gap: 20px 60px;
   height: auto;
   width: 20vw;
   display: grid;
@@ -492,6 +491,7 @@
   font-size: 0.8rem;
   height: auto;
   width: auto;
+  min-width: 8vw;
   font-family: "DM Sans", sans-serif;
   color: #fafafa;
   margin-bottom: 0 !important;
@@ -540,6 +540,9 @@
   .skills {
     width: auto !important;
     gap: 22px 0px !important;
+  }
+  .skills-container .box-container .box-skills .skills .p-skill {
+    font-size: 0.7rem;
   }
 }
 .container-card {
