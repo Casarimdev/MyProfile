@@ -563,6 +563,12 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.p-card:hover .pc-icon {
+  transform: translateX(20px);
+  transition: 1s;
+  color: white;
+}
+
 .pc-icon {
   transition: 2s;
 }
@@ -648,6 +654,11 @@
 @media (max-width: 900px) {
   .container-card {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .h1-middle {
+    font-size: 28px !important;
   }
 }
 * {
@@ -739,7 +750,7 @@ body {
 
 .navbar {
   background: rgb(22, 20, 25);
-  background: linear-gradient(180deg, rgb(22, 20, 25) 51%, rgba(22, 20, 25, 0) 74%);
+  background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22, 20, 25, 0) 74%);
   overflow-y: hidden;
   border-bottom: 1px solid #b01f1f;
 }

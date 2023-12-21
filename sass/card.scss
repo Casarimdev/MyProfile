@@ -59,6 +59,11 @@
    
   }
   
+  .p-card:hover .pc-icon{
+    transform: translateX(20px);
+      transition: 1.0s;
+      color: white;
+  }
 
   .pc-icon{
     transition: 2.0s;
@@ -156,6 +161,12 @@
   @media (max-width: 900px){
     .container-card{
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 450px){
+    .h1-middle{
+      font-size: 28px!important;
     }
   }
 
