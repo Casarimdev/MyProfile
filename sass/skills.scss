@@ -68,7 +68,7 @@
 
                 .p-skill{
                     font-size: 0.8rem;
-                    display: grid;
+                    
                     height: auto;
                     width: auto;
                     font-family: 'DM Sans', sans-serif;
@@ -88,19 +88,51 @@
 
 @media (max-width: 1290px){
     .box-container{
-        grid-template-columns: 1fr !important;}
+        grid-template-columns: 500px 500px !important;}
 
 .box-skills{
     width: 35vw !important;
 }
 
 .skills{
-    width: 30vw !important;
+    width: 100% !important;
     gap: 51px 15px !important;
 }
 }
 
 
 @media (max-width: 900px){
+    .box-container{
+        grid-template-columns: 1fr !important;}
+
+    .box-skills{
+    width: 350px !important;
+    height: auto !important;
+    }
+}
+
+@media (max-width: 450px){
+    .h3-skills{
+        font-size: 1.4rem !important;
+    }
     
+    .box-container{
+        padding: 5vh !important;
+    }
+
+    .skills-container .box-container .box-skills{
+        height: auto !important;
+        max-height: 100vh !important;
+        
+    }
+
+    .box-skills{
+        width: 250px !important;
+        height: auto !important;
+        }
+
+    .skills{
+        width: auto !important;
+        gap: 22px 0px !important;
+    }
 }
