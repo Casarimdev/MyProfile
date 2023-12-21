@@ -14,19 +14,22 @@
         grid-template-columns: 1fr 1fr;
         grid: wrap;
         justify-content: center;
+        justify-items: center;
         align-content: center;
         align-items: center;
         gap: 50px;
         padding: 10vh;
 
         .box-skills{
-            min-height: 44vh !important;
-            height: auto;
-            display: flex;
+            min-height: 34vh !important;
+            max-height: 44vh !important;
+            height: auto !important;
+            display: grid;
             padding: 5vh;
             width: 25vw;
-            flex-direction: column;
-            // justify-content: center;
+            // flex-direction: column;
+            justify-content: center;
+            justify-items: center;
             align-items: center;
             gap: 10px;
             // border: 2px solid #D04242;
@@ -57,13 +60,15 @@
                 height: auto;
                 width: 20vw;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 100px 100px;
                 justify-content: center;
-                align-content: center;
+                // justify-items: center;
+                // align-content: center;
                 background-color: #161419;
 
                 .p-skill{
                     font-size: 0.8rem;
+                    display: grid;
                     height: auto;
                     width: auto;
                     font-family: 'DM Sans', sans-serif;
@@ -93,4 +98,9 @@
     width: 30vw !important;
     gap: 51px 15px !important;
 }
+}
+
+
+@media (max-width: 900px){
+    
 }

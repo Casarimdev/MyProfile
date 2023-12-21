@@ -442,18 +442,21 @@
   grid-template-columns: 1fr 1fr;
   grid: wrap;
   justify-content: center;
+  justify-items: center;
   align-content: center;
   align-items: center;
   gap: 50px;
   padding: 10vh;
 }
 .skills-container .box-container .box-skills {
-  min-height: 44vh !important;
-  height: auto;
-  display: flex;
+  min-height: 34vh !important;
+  max-height: 44vh !important;
+  height: auto !important;
+  display: grid;
   padding: 5vh;
   width: 25vw;
-  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
   align-items: center;
   gap: 10px;
   border-radius: 20px;
@@ -481,13 +484,13 @@
   height: auto;
   width: 20vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100px 100px;
   justify-content: center;
-  align-content: center;
   background-color: #161419;
 }
 .skills-container .box-container .box-skills .skills .p-skill {
   font-size: 0.8rem;
+  display: grid;
   height: auto;
   width: auto;
   font-family: "DM Sans", sans-serif;
@@ -659,6 +662,12 @@
 @media (max-width: 450px) {
   .h1-middle {
     font-size: 28px !important;
+  }
+  .content {
+    padding: 15px !important;
+  }
+  .card {
+    width: 250px !important;
   }
 }
 * {
