@@ -21,12 +21,12 @@
         padding: 10vh;
 
         .box-skills{
-            min-height: 44vh !important;
+            min-height: 32vh !important;
             // max-height: 44vh !important;
             height: auto !important;
             display: grid;
             padding: 5vh;
-            width: 25vw;
+            width: 19vw;
             // flex-direction: column;
             justify-content: center;
             justify-items: center;
@@ -58,7 +58,7 @@
             .skills{
                 gap: 20px 60px;
                 height: auto;
-                width: 20vw;
+                width: 35vw;
                 display: grid;
                 grid-template-columns: 100px 100px;
                 justify-content: center;
@@ -69,8 +69,9 @@
                 .p-skill{
                     font-size: 0.8rem;
                     height: auto;
+                    text-align: left;
                     width: auto;
-                    min-width: 8vw;
+                    min-width: 25vw;
                     font-family: 'DM Sans', sans-serif;
                     color: #fafafa;
                     margin-bottom: 0 !important;
@@ -86,7 +87,7 @@
 }
 
 
-@media (max-width: 1290px){
+@media (max-width: 1411px){
     .box-container{
         grid-template-columns: 500px 500px !important;}
 
@@ -95,8 +96,9 @@
 }
 
 .skills{
-    width: 100% !important;
-    gap: 51px 15px !important;
+    width: 30vw;
+    gap: 51px 40px !important;
+    
 }
 }
 
@@ -108,6 +110,10 @@
     .box-skills{
     width: 350px !important;
     height: auto !important;
+    }
+
+    .skills-container .box-container .box-skills .skills{
+        width: 110% !important;
     }
 }
 
@@ -131,11 +137,12 @@
         height: auto !important;
         }
 
-    .skills{
-        width: auto !important;
-        gap: 22px 0px !important;
+    .skills-container .box-container .box-skills .skills{
+        width: 155% !important;
+        gap: 22px 20px !important;
     }
     .skills-container .box-container .box-skills .skills .p-skill{
         font-size: 0.7rem;
+        min-width: 30vw !important;
     }
 }
