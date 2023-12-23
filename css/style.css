@@ -921,8 +921,6 @@ body {
 .container-down .img-me .me {
   height: 40vh;
   width: 30vw;
-  border-radius: 50%;
-  background-color: #D04242;
 }
 
 a {
@@ -953,7 +951,6 @@ a {
     background-image: url("../imagens/wallpaper-python-2.png");
     background-position-x: 30%;
     background-position-y: 20%;
-    background-size: 80% 120%;
   }
 }
 
