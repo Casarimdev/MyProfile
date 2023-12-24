@@ -913,14 +913,10 @@ body {
   align-items: start;
   background-color: rgba(250, 250, 250, 0);
 }
-.container-down .img-me {
-  width: 50%;
+.container-down .me {
+  margin-left: 15vw;
   height: auto;
-  padding-left: 10vw;
-}
-.container-down .img-me .me {
-  height: 40vh;
-  width: 30vw;
+  width: 15vw;
 }
 
 a {
