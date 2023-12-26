@@ -211,10 +211,11 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
 // }
 
 .second-container{
-    height: 86vh;
+    height: auto;
     width: 100vw;
     display: flex;
     align-items: start;
+    flex-wrap: wrap;
     background-color: #161419;
     
 
@@ -275,7 +276,7 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
 
     .container-icons{
       height: auto;
-      width: 15vw;
+      width: auto;
       gap: 15px;
       display: flex;
       flex-direction: row;
@@ -288,8 +289,9 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
 
     .me{
       margin-left: 15vw;
-      height: auto;
-      width: 15vw;
+      height: 45vh;
+      width: auto;
+      overflow: hidden !important;
     }
   
 }
@@ -320,6 +322,12 @@ a {
   }
 }
 
+@media (max-width: 1000px){
+  .p-middle1{
+    width: 65vw ;
+  }
+}
+
 @media (max-width: 886px){
   .container-high{
     background-image: url('../imagens/wallpaper-python-2.png');
@@ -328,4 +336,39 @@ a {
     // background-size: 80% 120%;
   }
 }
+
+@media (max-width:750px){
+  .container-down{
+    flex-direction: column-reverse !important;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .me{
+    margin: 0 !important;
+    padding-bottom: 8vh;
+  }
+
+  .container-down .text-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto !important;
+    padding: 0px !important;
+  }
+  
+  .p-middle{
+    width: 92vw;
+    text-align: center !important;
+  }
+
+}
+
+@media (max-width: 600px){
+  .p-middle1{
+    width: 90vw;
+  }
+}
+
 
