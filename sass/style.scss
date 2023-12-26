@@ -8,6 +8,7 @@
 @import 'navrespos.scss';
 @import 'skills.scss';
 @import'card.scss';
+@import 'navdown.scss';
 * {
   margin: 0;
   padding: 0;
@@ -120,7 +121,7 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
   width: 200px;
   color: #fafafa !important;
   overflow-y: hidden;
-  margin-bottom: 0 !important;
+  margin-bottom: 0 ;
 }
 
 .h3-top:hover{
@@ -368,6 +369,14 @@ a {
 @media (max-width: 600px){
   .p-middle1{
     width: 90vw;
+  }
+
+  .button-scroll{
+    padding-top: 10vh !important;
+  }
+
+  .navigation{
+    width: auto;
   }
 }
 

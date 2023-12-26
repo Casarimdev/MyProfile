@@ -23,3 +23,19 @@
     }
     
 }
+
+@media (max-width: 789px){
+    .nav-itens{
+        display: none !important;
+    }
+    
+    .navbar{
+        height: 10vh !important;
+    }
+
+
+    .h3-top{
+        width: auto !important;
+        padding-bottom: 1vh !important;
+    }
+}
