@@ -9,6 +9,8 @@
 @import 'skills.scss';
 @import'card.scss';
 @import 'navdown.scss';
+@import 'buttonmoon.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -133,7 +135,7 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
 
 .nav-itens{
   font-family: 'Poppins', sans-serif;
-  width: 50vw;
+  width: 76vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
