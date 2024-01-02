@@ -10,6 +10,7 @@
 @import'card.scss';
 @import 'navdown.scss';
 @import 'buttonmoon.scss';
+@import 'cleanmode.scss';
 
 * {
   margin: 0;
@@ -42,6 +43,9 @@ body{
   background-size: cover;
   
 }
+
+
+
 .content-high{
   padding-top: 30vh;
   display: flex;
@@ -103,7 +107,7 @@ body{
 
 .navbar{
   background: rgb(22,20,25);
-background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0) 74%);
+  background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0) 74%);
   overflow-y: hidden;
   border-bottom: 1px solid #b01f1f;
 }
@@ -132,6 +136,7 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
   color: #D04242 !important;
   
 }
+
 
 .nav-itens{
   font-family: 'Poppins', sans-serif;
@@ -224,6 +229,8 @@ background: linear-gradient(180deg, rgba(22, 20, 25, 0.429) 51%, rgba(22,20,25,0
 
 }
 
+
+
 .contain-middle{
   width: 100vw;
   display: flex;
@@ -314,6 +321,14 @@ a {
   }
 }
 
+
+
+
+
+
+
+
+// RESPONSIVIDADE
 @media (max-width: 1111px){
   .container-high{
     height: 100vh;

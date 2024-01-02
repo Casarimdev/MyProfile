@@ -12,6 +12,7 @@
     // min-height: 100vh;
   }
 
+
 .navigation {
   width: 420px;
   height: 70px;
@@ -26,6 +27,9 @@
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
+
+
+
 .navigation ul {
     overflow: hidden !important;
     display: flex;
@@ -49,6 +53,9 @@
   text-align: center;
   font-weight: 500;
 }
+
+
+
 .navigation ul li a .icon {
   position: relative;
   display: block;
@@ -124,3 +131,5 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transform: scale(0.85);
 }
+
+
