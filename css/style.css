@@ -887,7 +887,7 @@
   top: 0;
   left: 0;
   content: "";
-  background-image: url("../imagens/sun.png");
+  background-image: url("../imagens/moon.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -905,7 +905,7 @@
 .checkbox:checked::before {
   left: 44px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), inset 4px 4px rgb(255, 255, 255), inset -4px 4px rgb(255, 255, 255);
-  background-image: url("../imagens/moon.png");
+  background-image: url("../imagens/sun.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -1093,6 +1093,54 @@ body.dark .h1-middle, body.dark .h3-know {
 
 body.dark .fa-square-whatsapp:before, body.dark .fa-linkedin:before, body.dark .fa-square-github:before, body.dark .fa-square-instagram:before {
   color: #4fe0e0;
+}
+
+body.dark .skills-container {
+  background-color: #EAECE7;
+}
+
+body.dark .box-skills {
+  background-color: #EAECE7 !important;
+  transition: 0.8s;
+  box-shadow: -1px 7px 12px -1px #161419 !important;
+}
+
+body.dark .h3-skills, body.dark .p-skill {
+  color: #161419 !important;
+  text-shadow: #fafafa;
+}
+
+body.dark .skills {
+  background-color: #EAECE7 !important;
+}
+
+body.dark .fa-circle-check {
+  color: #4fe0e0 !important;
+}
+
+body.dark .h1-middle {
+  background-color: #EAECE7 !important;
+}
+
+body.dark .container-card {
+  background-color: #EAECE7;
+}
+
+body.dark .card {
+  box-shadow: 20px 20px 50px #4fe0e0;
+  background: #EAECE7;
+  box-shadow: -1px 7px 12px -1px #161419;
+}
+body.dark .card:hover .pc-icon {
+  color: #161419 !important;
+}
+
+body.dark .pc-icon {
+  color: #4fe0e0 !important;
+}
+
+body.dark .h2-card, body.dark .p-card {
+  color: #161419;
 }
 
 * {

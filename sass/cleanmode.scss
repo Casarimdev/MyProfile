@@ -181,3 +181,62 @@ body.dark .second-container , body.dark .container-down{
   body.dark .fa-square-whatsapp:before, body.dark .fa-linkedin:before, body.dark .fa-square-github:before, body.dark .fa-square-instagram:before{
     color: #4fe0e0;
   }
+
+
+  // SKILLS
+
+  body.dark .skills-container{
+    background-color: #EAECE7;
+}
+
+
+body.dark .box-skills{
+    background-color: #EAECE7 !important;
+    transition: 0.8s;   box-shadow: -1px 7px 12px -1px #161419 !important;
+}
+
+body.dark .h3-skills, body.dark .p-skill{
+    color: #161419 !important;
+    text-shadow: #fafafa;
+}
+
+body.dark .skills{
+    background-color: #EAECE7 !important;
+}
+
+body.dark .fa-circle-check{
+  color: #4fe0e0 !important;
+}
+
+
+body.dark .h1-middle{
+  background-color: #EAECE7 !important;
+}
+
+// PROJECTS - CARDS
+
+body.dark .container-card{
+  background-color: #EAECE7;
+}
+
+body.dark .card{
+    box-shadow: 20px 20px 50px #4fe0e0;
+    background: #EAECE7;
+    // border-top: 1px solid #4fe0e0;
+    // border-left: 1px solid #;
+    box-shadow: -1px 7px 12px -1px #161419;
+
+    &:hover{
+      .pc-icon{
+        color: #161419 !important;
+      }
+    }
+}
+
+body.dark .pc-icon{
+  color: #4fe0e0 !important;
+}
+
+body.dark .h2-card, body.dark .p-card{
+  color: #161419;
+}
