@@ -1091,7 +1091,7 @@ body.dark .h1-middle, body.dark .h3-know {
   color: #4fe0e0 !important;
 }
 
-body.dark .fa-square-whatsapp:before, body.dark .fa-linkedin:before, body.dark .fa-square-github:before, body.dark .fa-square-instagram:before {
+body.dark .fa-square-whatsapp:before, body.dark .fa-linkedin:before, body.dark .fa-square-github:before, body.dark .fa-square-instagram:before, body.dark .fa-phone-volume:before, body.dark .fa-envelope-circle-check:before, body.dark .fa-github:before {
   color: #4fe0e0;
 }
 
@@ -1143,21 +1143,34 @@ body.dark .h2-card, body.dark .p-card {
   color: #161419;
 }
 
+body.dark .h3-contact {
+  color: #161419;
+}
+
+body.dark #contact {
+  background-color: #EAECE7;
+}
+
+body.dark .icons-container {
+  background-color: #EAECE7;
+}
+
 #contact {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   background-color: #161419;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .icons-container {
   height: 45vh;
-  width: 70vw;
-  display: flex;
-  justify-content: space-around;
+  width: auto;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   background-color: #161419;
@@ -1167,12 +1180,17 @@ body.dark .h2-card, body.dark .p-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36vh;
+  height: auto;
   width: auto;
   flex-direction: column;
   padding-bottom: 10vh;
   gap: 12px 50px;
   overflow: hidden;
+  transition: 1s;
+}
+.icons-container .assets-contact:hover {
+  transform: scale(0.9);
+  transition: 0.7s;
 }
 
 .h3-contact {
@@ -1189,6 +1207,30 @@ body.dark .h2-card, body.dark .p-card {
   color: #878989;
 }
 
+@media (max-width: 972px) {
+  #contact {
+    height: 70vh;
+  }
+  .icons-container {
+    height: 60vh;
+    grid-template-columns: 250px 250px;
+  }
+}
+@media (max-width: 592px) {
+  .icons-container {
+    height: auto;
+    grid-template-columns: 250px;
+  }
+  .assets-contact {
+    height: auto !important;
+    min-height: 25vh;
+    padding-bottom: 32px !important;
+  }
+  #contact {
+    height: auto;
+    min-height: 123vh;
+  }
+}
 * {
   margin: 0;
   padding: 0;

@@ -178,7 +178,7 @@ body.dark .second-container , body.dark .container-down{
     color: #4fe0e0 !important;
   }
   
-  body.dark .fa-square-whatsapp:before, body.dark .fa-linkedin:before, body.dark .fa-square-github:before, body.dark .fa-square-instagram:before{
+  body.dark .fa-square-whatsapp:before, body.dark .fa-linkedin:before, body.dark .fa-square-github:before, body.dark .fa-square-instagram:before, body.dark .fa-phone-volume:before, body.dark .fa-envelope-circle-check:before, body.dark .fa-github:before{
     color: #4fe0e0;
   }
 
@@ -239,4 +239,18 @@ body.dark .pc-icon{
 
 body.dark .h2-card, body.dark .p-card{
   color: #161419;
+}
+
+// CONTACT
+
+body.dark .h3-contact{
+  color: #161419;
+}
+
+body.dark #contact{
+  background-color: #EAECE7;
+}
+
+body.dark .icons-container{
+  background-color: #EAECE7;
 }

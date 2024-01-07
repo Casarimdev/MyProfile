@@ -1,19 +1,22 @@
 #contact{
-    height: 70vh;
+    height: 50vh;
     width: 100%;
     background-color: #161419;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
 }
 
+
+
 .icons-container{
     height: 45vh;
-    width: 70vw;
-    display: flex;
-    justify-content: space-around;
+    width: auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: #161419;
@@ -23,14 +26,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 36vh;
+        height: auto;
         width: auto;
         flex-direction: column;
         padding-bottom: 10vh;
         gap: 12px 50px;
         overflow: hidden;
+        transition: 1.0s;
+
+        &:hover{
+            transform: scale(0.9);
+            transition: 0.7s;
+        }
     }
 }
+
+
 
 .h3-contact{
     font-size: 1.4rem;
@@ -39,9 +50,43 @@
     color: #fafafa;
 }
 
+
+
 .p-contact{
     font-size: 1rem;
     height: auto !important;
     overflow: hidden;
     color: #878989;
+}
+
+@media (max-width:972px){
+    #contact{
+        height: 70vh;
+    }
+
+    .icons-container{
+        height: 60vh;
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media (max-width:592px){
+    .icons-container{
+        height: auto;
+        grid-template-columns: 250px;
+        
+    }
+
+    .assets-contact{
+        height: auto !important;
+        min-height: 25vh;
+        padding-bottom: 32px !important;
+    }
+
+    #contact{
+        height: auto;
+        min-height: 123vh;
+    }
+
+
 }
